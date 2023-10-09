@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="Galactic Hub Atlas Project"> 
+    <meta name="description" content="An archive of player discoveries and bases inside the Galactic Hub">
+    <meta name="theme-color" content="#3cb4a9"> 
+    <meta name="keywords" content="No Man's Sky, No Mans Sky, NMS, Galactic Hub">
+    <meta name="author" content="apexfatality">
+    <title>Galactic Hub Atlas Project</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </div>
+    <h1>Galactic Hub Atlas Project</h1>
+    <h2>Choose which category you want to view:</h2>
+    <div class="button-container">
+        <button onclick="goToPage('./bases.html')">Bases</button>
+        <button onclick="goToPage('./fauna.html')" disabled>Fauna</button>
+        <button onclick="goToPage('./flora.html')" disabled>Flora</button>
+        <button onclick="goToPage('./system.html')" disabled>Systems</button>
+        <button onclick="goToPage('./planet.html')" disabled>Planets</button>
+        <button onclick="goToPage('./settelment.html')" disabled>Settelments</button>
+    </div>
+    <div class="hub-image">
+        <a href="https://nomanssky.fandom.com/wiki/Galactic_Hub_Project">
+            <img src="https://static.wikia.nocookie.net/nomanssky_gamepedia/images/7/75/Galactic_Hub_Emblem.png"
+                alt="Galactic Hub logo">
+        </a>
+    </div>
+    <script>
+        function goToPage(pageUrl) {
+            // Redirect to the specified HTML page
+            window.location.href = pageUrl;
+        }
+    </script>
+    <!-- <script src="./app.js"></script> -->
+</body>
+</html>

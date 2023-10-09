@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="Galactic Hub Atlas Project"> 
+    <meta name="description" content="An archive of player bases inside the Galactic Hub (Sep 2023)">
+    <meta name="theme-color" content="#3cb4a9"> 
+    <meta name="keywords" content="No Man's Sky, No Mans Sky, NMS, Galactic Hub">
+    <meta name="author" content="apexfatality">
+    <title>Galactic Hub Bases</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <button id= "mainPage" onclick="goToPage('./index.html')">← Return to main page</button>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </div>
+    <h1>Galactic Hub Project Player Bases - Sep 2023 </h1>
+    <h2>Apply some filters to see the data below</h2>
+    <form>
+        <div>
+            <label for="builderFilter">Filter by Builder:</label>
+            <input type="text" id="builderFilter">
+        </div>
+        <div>
+            <label for="baseNameFilter">Filter by Base Name:</label>
+            <input type="text" id="baseNameFilter">
+        </div>
+        <div>
+            <label for="regionFilter">Filter by Region:</label>
+            <select id="regionFilter">
+                <option value="">Any</option>
+                <option value="HUB1">HUB1 - The Arm of Vezitinen</option>
+                <option value="HUB2">HUB2 - Canthian</option>
+                <option value="HUB3">HUB3 - Dexterf Sector</option>
+                <option value="HUB4">HUB4 - The Arm of Katteus</option>
+                <option value="HUB5">HUB5 - Nugsdor Adjunct</option>
+                <option value="HUB6">HUB6 - Uefert Nebula</option>
+                <option value="HUB7">HUB7 - Widraik</option>
+                <option value="HUB8">HUB8 - Airnaka Conflux</option>
+                <option value="HUB9">HUB9 - Sivess Instability</option>
+                <option value="HUB10">HUB10 - Savenix Instability</option>
+                <option value="HUB11">HUB11 - Nonlopsi Instability</option>
+            </select>
+        </div>
+        <div>
+            <label for="tagFilter">Filter by Hub Tag:</label>
+            <input type="text" id="tagFilter">
+        </div>
+        <div>
+            <label for="numericalFilter">Filter by Base Piece Count:</label>
+            <select id="numericalFilter">
+                <option value="0">Any</option>
+                <option value="100"> 100+</option>
+                <option value="250"> 250+</option>
+                <option value="500">500+</option>
+                <option value="1000">1000+</option>
+                <option value="2000">2000+</option>
+            </select>
+        </div>
+        <div>
+            <label for="platformFilter">Filter by Platform:</label>
+            <select id="platformFilter">
+                <option value="">All</option>
+                <option value="Steam">PC - Steam</option>
+                <option value="GOG">PC - GOG</option>
+                <option value="Xbox">Xbox</option>
+                <option value="Playstation">Playstation</option>
+                <option value="Switch">Switch</option>
+            </select>
+        </div>
+        <div>
+            <label for="gameModeFilter">Filter by Game Mode:</label>
+            <select id="gameModeFilter">
+                <option value="">All</option>
+                <option value="Permadeath">Permadeath</option>
+            </select>
+        </div>
+        <div>
+            <label for="dateFilter">Filter by Upload Year:</label>
+            <select id="dateFilter">
+                <option value="">All</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+            </select>
+        </div>
+    </form>
+    <div class="card-container" id="csvCards">
+        <!-- Cards will be inserted here using JavaScript -->
+    </div>
+    <script>
+        function goToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+    <script src="./bases.js"></script>
+    <script>
+        // Call the init function and pass the CSV file URL as a parameter
+        init('GHub_bases.csv');
+    </script>
+    <!-- <script src="./app.js"></script> -->
+</body>
+</html>
