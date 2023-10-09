@@ -209,4 +209,12 @@ form {
         gap: 20px; 
       }
 
+	.button-container {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        margin: auto;
+    }
+
 }
