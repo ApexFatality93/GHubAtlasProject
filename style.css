@@ -170,9 +170,9 @@ input[type="text"] {
 }
 
 select {
-	-webkit-appearance: none;
+    -webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none; /* Remove default iOS styling */
+    appearance: none; /* Remove default iOS styling */
     width: 90%;
     padding: 8px;
     margin-top: 5px;
@@ -212,7 +212,7 @@ form {
         gap: 20px; 
       }
 
-	.button-container {
+    .button-container {
         justify-content: center;
         align-items: center;
         display: grid;
