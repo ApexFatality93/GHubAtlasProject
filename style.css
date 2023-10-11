@@ -72,6 +72,7 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #3CB5A9
 }
 
 .card p {
@@ -82,7 +83,8 @@ h1 {
 .glyph-font {
     font-family: 'NMS Glyphs';
     font-weight: bold; 
-    font-size: 26px; 
+    font-size: 26px;
+    color: #3CB5A9 
 }
 
 button {
@@ -171,7 +173,7 @@ input[type="text"] {
 
 select {
     -webkit-appearance: none;
-	-moz-appearance: none;
+    -moz-appearance: none;
     appearance: none; /* Remove default iOS styling */
     width: 90%;
     padding: 8px;
@@ -189,11 +191,11 @@ select {
 }
 
 .hub-image {
-	justify-content: center;
+    justify-content: center;
 }
 
 .hub-image img {
-	width: 250px;
+    width: 250px;
     margin-top: 20px;
 }
 
