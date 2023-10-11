@@ -44,12 +44,12 @@ function init(csvFile) {
                         // Create card content
                         const cardContent = `
                             <h2>${cells[2]}</h2>
-                            <p>HUB Tag: ${cells[0]}</p>
-                            <p>Builder: ${cells[3]}</p>
-                            <p>Built-on: ${cells[4]}</p>
-                            <p>Built-in: ${cells[5]} mode</p>
-                            <p>Base pieces: ${cells[6]}</p>
-                            <p>Upload date: ${cells[7]}</p>
+                            <p><strong>HUB Tag:</strong> ${cells[0]}</p>
+                            <p><strong>Builder:</strong> ${cells[3]}</p>
+                            <p><strong>Built-on:</strong> ${cells[4]}</p>
+                            <p><strong>Built-in:</strong> ${cells[5]} mode</p>
+                            <p><strong>Base pieces:</strong> ${cells[6]}</p>
+                            <p><strong>Upload date:</strong> ${cells[7]}</p>
                             <p><span class="glyph-font">${cells[1]}</p>
                         `;
 
@@ -66,6 +66,7 @@ function init(csvFile) {
                         platformFilter == "" &&
                         gameModeFilter == "" &&
                         dateFilter == ""
+                    
                         
                     ) {
                         csvCards.innerHTML = '';
